@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>React.js sample</title>
+</head>
+<body>
+    <div id="myReactApp"></div>
+    <script type="text/babel">
+        class Greeter extends React.Component{
+            render(){
+                return <h1>{this.props.greeting}</h1>;
+            }
+        }
+
+        ReactDOM.render(<Greeter greeting="Hello World!" />, document.getElementById('myReactApp'));
+    </script>
+</body>
+</html>
