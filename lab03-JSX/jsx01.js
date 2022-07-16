@@ -11,21 +11,21 @@ React.creatElement(
 
 // 간단한 JSX 적용/미적용 예제
 // JSX 적용 code
-const element = (
+const element1 = (
     <h1 className="greeting">
         Hello, World~!!
     </h1>
 );
 
 // JSX 미적용 code
-const element = React.createElement(
+const element2 = React.createElement(
     'h1',
     { className : 'greeting' },
     'Hello, World~!!'
 );
 
 // React.createElement()의 결과로 생성되는 객체
-const element = {
+const element3 = {
     type: 'h1',
     props: {
         className: 'greeting',
@@ -69,16 +69,16 @@ React.createElement('div',null, `Hello, ${name}`);
 const title = response.potentiallyMaliciousInput;
 
 // 이 코드는 안전합니다. 
-const element = <h1>{title}</h1>;
+const element4 = <h1>{title}</h1>;
 
 // JSX Code : JS + XML/HTML 
 const name = "아이유";
-const element = <h1>안녕, {name}</h1>;
+const element5 = <h1>안녕, {name}</h1>;
 
-ReactDOM.render(
-    element,
-    document.getElementById('root');
-);
+// ReactDOM.render(
+//     element,
+//     document.getElementById('root');
+// );
 
 // JSX code 
 function formatName(user){
@@ -90,7 +90,7 @@ const user = {
     lastName: "Lee"
 };
 
-const element = (
+const element6 = (
     <h1>
         Hello, {formatName(user)}
     </h1>
@@ -111,14 +111,14 @@ function getGreeting(user){
 
 // element의 속성에 값을 넣는 방법 
 // 더블 쿼테이션 사이에 문자열을 넣는다.
-const element = <div tabIndex="0"></div>;
+const element7 = <div tabIndex="0"></div>;
 
 // 중괄호({}) 사이에 JavaScript Code를 작성 
-const element = <img src={user.avatarUrl}></img>;
+const element8 = <img src={user.avatarUrl}></img>;
 
 
 // 자식(children)을 정의하는 방법
-const element = (
+const element9 = (
     <div>
         <h1>브로커</h1>
         <h2>이지은, 송강호가 나온 영화</h2>
