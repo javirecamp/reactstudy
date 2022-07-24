@@ -1,0 +1,9 @@
+const root = ReactDOM.createRoot(document.getElementById('root'));
+setInterval(()=>{
+  root.render(
+    <React.StrictMode>
+      <Clock/>
+    </React.StrictMode>,
+    document.getElementById(root)
+  )
+})
