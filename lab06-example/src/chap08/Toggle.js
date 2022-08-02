@@ -13,7 +13,6 @@ const Checkbox = ({ id, checkedList, onToggle, label }) => {
 	);
 }
 
-
 const Toggle = () => {
 	const [checkedList, setCheckedList] = useState([]);
 
@@ -26,19 +25,19 @@ const Toggle = () => {
 	return (
 		<div>
 			<ul>
-				<li style={{ margin: 10 }}>
+				<li style={{ margin: 30 }}>
 					<Checkbox id="1" checkedList={checkedList} onToggle={onToggle} label="Todo - 1" />
 				</li>
-				<li style={{ margin: 10 }}>
+				<li style={{ margin: 30 }}>
 					<Checkbox id="2" checkedList={checkedList} onToggle={onToggle} label="Todo - 2" />
 				</li>
-				<li style={{ margin: 10 }}>
+				<li style={{ margin: 30 }}>
 					<Checkbox id="3" checkedList={checkedList} onToggle={onToggle} label="Todo - 3" />
 				</li>
-				<li style={{ margin: 10 }}>
+				<li style={{ margin: 30 }}>
 					<Checkbox id="4" checkedList={checkedList} onToggle={onToggle} label="Todo - 4" />
 				</li>
-				<li style={{ margin: 10 }}>
+				<li style={{ margin: 30 }}>
 					<Checkbox id="5" checkedList={checkedList} onToggle={onToggle} label="Todo - 5" />
 				</li>
 			</ul>
